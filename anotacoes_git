@@ -1,0 +1,63 @@
+Após instalar o Git, você precisa configurar seu nome de usuário e e-mail:
+
+git config --global user.name "Seu Nome"
+git config --global user.email "seu.email@exemplo.com"
+________________________________
+
+Comandos Básicos do Git
+1. git init
+Inicializa um novo repositório Git no diretório atual.
+
+git init
+2. git clone
+Clona um repositório remoto para o diretório local.
+
+git clone https://github.com/usuario/repo.git
+3. git status
+Exibe o status dos arquivos no diretório de trabalho e no índice.
+
+git status
+4. git add
+Adiciona arquivos ao índice (staging area).
+
+git add nome_do_arquivo
+# Ou para adicionar todos os arquivos alterados:
+git add .
+5. git commit
+Grava as mudanças do índice no repositório local.
+
+git commit -m "Mensagem descritiva sobre a mudança"
+6. git push
+Envia as mudanças do repositório local para o repositório remoto.
+
+git push origin nome_da_branch
+7. git pull
+Atualiza o repositório local com as mudanças do repositório remoto.
+
+git pull origin nome_da_branch
+8. git branch
+Lista todas as branches no repositório. Para criar uma nova branch:
+
+git branch nome_da_nova_branch
+9. git checkout
+Muda para uma branch específica.
+
+git checkout nome_da_branch
+10. git merge
+Mescla uma branch na branch atual.
+
+git merge nome_da_branch
+Conventional Commits
+Conventional Commits é uma convenção para escrever mensagens de commit que facilita a leitura e entendimento do histórico de commits. Uma mensagem de commit convencional tem a seguinte estrutura:
+
+tipo(escopo opcional): descrição
+
+[corpo opcional]
+Tipos Comuns de Commits
+feat: Uma nova funcionalidade.
+fix: Correção de bug.
+docs: Mudanças na documentação.
+style: Mudanças que não afetam o significado do código (espaços em branco, formatação, etc).
+refactor: Mudança de código que não corrige um bug nem adiciona uma funcionalidade.
+test: Adição ou correção de testes.
+chore: Mudanças no processo de build ou ferramentas auxiliares e bibliotecas.
